@@ -58,4 +58,34 @@ console.log(myArray)
 console.log(myArray.shift())
 console.log(myArray)
 
-myArray.unshift("David", "")
+myArray.unshift("David", "Spark")
+console.log(myArray)
+
+//lenght
+
+console.log(myArray.length)
+
+//clear
+
+myArray = []
+myArray.length = 0
+console.log(myArray)
+
+// slice
+myArray = ["David", "Gomez", "Spark", 26, true]
+
+let myNewArray = myArray.slice(1, 3)// Se toma dos indices especificando su tamano
+
+
+console.log(myArray)
+console.log(myNewArray)
+
+ //Splice
+
+ myArray.splice(1 , 3)
+ console.log(myArray)
+
+ myArray = ["David", "Gomez", "Spark", 26, true]
+
+ myArray.splice(1, 2, "Nueva entrada")
+ console.log(myArray)
