@@ -32,23 +32,43 @@ libreria.delete("Alas de onix")
 console.log(libreria)
 // 7. Crea un mapa que asocie el número del mes a su nombre
 let mes = new Map([
-    [0, "Enero"],
-    [1, "Febrero"],
-    [2, "Marzo"],
-    [3, "Abril"],
-    [4, "Mayo"],
-    [5, "Junio"],
-    [6, "Julio"],
-    [7, "Agosto"],
-    [8, "Septiembre"],
-    [9, "Octubre"],
-    [10,"Noviembre"],
-    [11,"Diciembre"]
+    [1, "Enero"],
+    [2, "Febrero"],
+    [3, "Marzo"],
+    [4, "Abril"],
+    [5, "Mayo"],
+    [6, "Junio"],
+    [7, "Julio"],
+    [8, "Agosto"],
+    [9, "Septiembre"],
+    [10, "Octubre"],
+    [11,"Noviembre"],
+    [12,"Diciembre"]
 ])
 console.log(mes)
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
-console.log(mes.has(4))
+console.log(mes.has(5))
 
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
+mes.set("Meses de Verano", ["Junio", "Julio", "Agosto"])
+console.log(mes)
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
+// Array
+let games = []
+
+games = ["Black myth wukong", "Fortnite", "Warframe", "F1 25"]
+console.log(games)
+
+// Set
+let gamesSet = new Set(games)
+console.log(gamesSet)
+
+// Map
+
+let gamesMap = new Map()
+console.log(gamesMap)
+
+gamesMap.set("Juegos comprados", gamesSet)
+
+console.log(gamesMap)
